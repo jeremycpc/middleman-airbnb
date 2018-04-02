@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>AirBnB</title>
-    <link href="stylesheets/application-7467f26b.css" rel="stylesheet" />
+    <link href="stylesheets/application-1c4907e2.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
@@ -28,10 +28,10 @@
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
-        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/jeremycpc" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
+          <li><a href="../_user_dashboard.html.erb">Dashboard</a></li>
           <li><a href="#">Log Out</a></li>
         </ul>
       </div>
@@ -72,63 +72,63 @@
   </div>
 </div>
 
-<h2 class="cards-header text-center">Recent Flats</h2>
-<div class="container">
+<div class="container" id="home-flats">
+  <h2 class="cards-header text-center">Recent Flats</h2>
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Shanghai</h2>
-          <p>Very cool city, the best</p>
-          <p class="rating">
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #cacccd"></i>
-            <i class="fa fa-star" style="color: #cacccd"></i>
-          </p>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/melbourne');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Melbourne, Australia</h2>
+            <p>Enormous mansion by Brighton Beach</p>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+            </p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/jeremycpc">
+          <a class="card-link" href="flats/jeremycpc.html"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/melbourne');">
-        <div class="card-category">Trending</div>
-        <div class="card-description">
-          <h2>Le Wagon Melbourne</h2>
-          <p>Coffee Connoiseurs</p>
-          <p class="rating">
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #cacccd"></i>
-          </p>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/sao paulo');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Sao Paulo, Brazil</h2>
+            <p>Small palace in Sao Paulo</p>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/sergiomurakami">
+          <a class="card-link" href="flats/sergiomurakami.html"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/sao-paulo');">
-        <div class="card-category">Hot</div>
-        <div class="card-description">
-          <h2>Le Wagon Sao Paulo</h2>
-          <p>Get yourself a kebab</p>
-          <p class="rating">
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-          </p>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Shanghai, China</h2>
+            <p>Bungalow in the CBD</p>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/johnnychan">
+          <a class="card-link" href="flats/johnnychan.html"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
   </div>
 </div>
 
