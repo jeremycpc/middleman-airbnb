@@ -1,0 +1,29 @@
+jeremycpc:
+  name: "Jeremy's home"
+  description: "Enormous mansion by Brighton Beach"
+  city_name: "Melbourne, Australia"
+  city_slug: "melbourne"
+  wifi: true
+  rating: 5
+  accomodates: 4
+  bedrooms: 3
+
+sergiomurakami:
+  name: "Sergio's home"
+  description: "Small palace in Sao Paulo"
+  city_name: "Sao Paulo, Brazil"
+  city_slug: "sao paulo"
+  wifi: false
+  rating: 4
+  accomodates: 10
+  bedrooms: 10
+
+johnnychan:
+  name: "Johnny's home"
+  description: "Bungalow in the CBD"
+  city_name: "Shanghai, China"
+  city_slug: "shanghai"
+  wifi: false
+  rating: 3
+  accomodates: 3
+  bedrooms: 2

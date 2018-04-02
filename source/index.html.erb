@@ -23,63 +23,30 @@ title: AirBnB
   </div>
 </div>
 
-<h2 class="cards-header text-center">Recent Flats</h2>
-<div class="container">
+<div class="container" id="home-flats">
+  <h2 class="cards-header text-center">Recent Flats</h2>
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-        <div class="card-category">Popular</div>
-        <div class="card-description">
-          <h2>Le Wagon Shanghai</h2>
-          <p>Very cool city, the best</p>
-          <p class="rating">
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #cacccd"></i>
-            <i class="fa fa-star" style="color: #cacccd"></i>
-          </p>
+    <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2><%= flat.city_name %></h2>
+            <p><%= flat.description %></p>
+            <p class="rating">
+              <% flat.rating.times do  %>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+              <% end %>
+              <% (5 - flat.rating).times do  %>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+              <% end %>
+            </p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= owner %>">
+          <a class="card-link" href="flats/<%= owner %>.html"></a>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/melbourne');">
-        <div class="card-category">Trending</div>
-        <div class="card-description">
-          <h2>Le Wagon Melbourne</h2>
-          <p>Coffee Connoiseurs</p>
-          <p class="rating">
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #cacccd"></i>
-          </p>
-        </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/sao-paulo');">
-        <div class="card-category">Hot</div>
-        <div class="card-description">
-          <h2>Le Wagon Sao Paulo</h2>
-          <p>Get yourself a kebab</p>
-          <p class="rating">
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-            <i class="fa fa-star" style="color: #ffb400"></i>
-          </p>
-        </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 
